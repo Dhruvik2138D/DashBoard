@@ -221,12 +221,12 @@ const SubCategory = () => {
                     />
                   </TableCell>
                   <TableCell align="left">
-                    <Button onClick={() => deleteData(row._id)}>
+                    <Button style={{display:'flex', alignItems:'center', justifyContent:'left', padding:' 0'}} onClick={() => deleteData(row._id)}>
                       <DeleteRoundedIcon className="text-danger" />
                     </Button>
                   </TableCell>
                   <TableCell align="left">
-                    <Button onClick={() => updateData(row._id)}>
+                    <Button style={{display:'flex', alignItems:'center', justifyContent:'left', padding:' 0'}} onClick={() => updateData(row._id)}>
                       <BorderColorRoundedIcon className="text-success" />
                     </Button>
                   </TableCell>

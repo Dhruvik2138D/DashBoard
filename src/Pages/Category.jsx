@@ -169,12 +169,12 @@ const Category = () => {
                     />
                   </TableCell>
                   <TableCell>
-                    <Button style={{display:'flex', alignItems:'center', justifyContent:'left', padding:' 0'}} color="white" onClick={() => deleteData(row._id)}>
+                    <Button style={{display:'flex', alignItems:'center', justifyContent:'left', padding:' 0'}} onClick={() => deleteData(row._id)}>
                       <DeleteRoundedIcon className="text-danger" />
                     </Button>
                   </TableCell>
                   <TableCell>
-                    <Button color="white" onClick={() => updateData(row._id)}>
+                    <Button style={{display:'flex', alignItems:'center', justifyContent:'left', padding:' 0'}} onClick={() => updateData(row._id)}>
                       <BorderColorRoundedIcon className="text-success" />
                     </Button>
                   </TableCell>
