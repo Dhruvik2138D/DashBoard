@@ -103,7 +103,7 @@ function ThemeDash(props) {
           color: "white",
           fontWeight: "bold",
           fontSize: "20px",
-          marginBottom: "16px", // Space below the header
+          marginBottom: "16px",
         }}
       >
         Interview Portal
