@@ -49,7 +49,7 @@ const Dashboard = () => {
                 {/* Dashboard Header */}
 
                 <Container className="mt-3">
-                    <Row>
+                    <Row style={{rowGap:'15px'}}>
                         {loading ? (
                             <Box display="flex" justifyContent="center" alignItems="center" sx={{ width: '100%', height: '60vh' }}>
                                 <HashLoader color="#122dff"/>
@@ -58,7 +58,7 @@ const Dashboard = () => {
                             <>
                                 {/* Category Box */}
                                 <Col md={4}>
-                                    <Card className="shadow-sm">
+                                    <Card style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
                                         <Card.Body>
                                             <Box display="flex" flexDirection="column" alignItems="center">
                                                 <Typography variant="h5" className="fw-bold" gutterBottom>Total Category</Typography>
@@ -70,10 +70,10 @@ const Dashboard = () => {
 
                                 {/* Sub-category Box */}
                                 <Col md={4}>
-                                    <Card className="shadow-sm">
+                                    <Card style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
                                         <Card.Body>
                                             <Box display="flex" flexDirection="column" alignItems="center">
-                                                <Typography variant="h5" className="fw-bold" gutterBottom>Total Sub-category</Typography>
+                                                <Typography variant="h5" className="fw-bold" gutterBottom>Total Sub category</Typography>
                                                 <Typography variant="h3" className="fw-bold" color="dark">{subcategory.length}</Typography>
                                             </Box>
                                         </Card.Body>
@@ -82,7 +82,7 @@ const Dashboard = () => {
 
                                 {/* Total Q/A Set Box */}
                                 <Col md={4}>
-                                    <Card className="shadow-sm">
+                                    <Card style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}}>
                                         <Card.Body>
                                             <Box display="flex" flexDirection="column" alignItems="center">
                                                 <Typography variant="h5" className="fw-bold" gutterBottom>Total Q/A</Typography>

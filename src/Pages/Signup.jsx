@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import { useFormik } from 'formik';
 import axios from 'axios';
-import { useNavigate,Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -32,7 +32,7 @@ const Signup = () => {
         console.log(res.data);
 
         // Redirect to the login page or home page
-        navigate('/admin/login');
+        navigate('/admin/');
       } catch (error) {
         console.log(error);
       }
@@ -53,7 +53,7 @@ const Signup = () => {
         <Box
           sx={{
             width: '500px',
-            border: '3px solid #1976D2',
+            boxShadow: '0 4px 10px rgba(25, 118, 210, 0.44)',
             padding: '40px 30px',
             borderRadius: '20px',
           }}
@@ -112,12 +112,29 @@ const Signup = () => {
           <Button variant="contained" fullWidth type="submit">
             Signup
           </Button>
-          <Box>
-            you have already an account   <Link to="/">Login</Link>  
-          </Box>
+          <Typography
+            variant="body2"
+            sx={{
+              textAlign: 'center',
+              marginTop: '10px',
+              fontSize: { xs: '0.85rem', sm: '1rem' },
+            }}
+          >
+            you have already an account{' '}
+            <Link
+              to="/"
+              style={{
+                color: '#1976D2',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+              }}
+            >
+              Login
+            </Link>
+          </Typography>
         </Box>
-      </form>
-    </Box>
+      </form >
+    </Box >
   );
 };
 

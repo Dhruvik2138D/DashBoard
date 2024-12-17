@@ -56,7 +56,7 @@ const Category = () => {
 
   const dataFetch = async () => {
     try {
-      // setLoading(true);  // Start loading
+      setLoading(true);  // Start loading
       const res = await axios.get("https://interviewhub-3ro7.onrender.com/catagory/", {
         headers: { Authorization: token },
       });
